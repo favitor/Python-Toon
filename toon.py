@@ -34,6 +34,7 @@ face1 = img[:, :width_cutoff]
 face2 = img[:, width_cutoff:]
 
 
+#Select a effect
 effect_type = int(input('''[1] Sketch
 [2] Stylize
 Choose a effect: '''))
@@ -49,10 +50,13 @@ else:
     print("Error, please try again.")  
 
 
+#Putting all together
 vis = np.concatenate((face1, editedface), axis=1)
 cv2.imshow("Final Image", vis)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+#Saving
 save_img = input(str("Do you want save the image? [Y/N]: "))
 if save_img == 'y' or 'Y':
     name = input(str("Enter a image name(without the extencion): "))
