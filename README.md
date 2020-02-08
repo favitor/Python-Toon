@@ -2,5 +2,5 @@
 Inspire by the toonme challenge, is a simple automate version.
 
 
-Usage
+Usage'\n'
 python toon.py --image .\patho-to-image.jpg
