@@ -12,13 +12,6 @@ if __name__ == '__main__':
                 type=str,
                 help='Path to the image.')
 
-    FLAGS, unparsed = parser.parse_known_args()
-
-    if FLAGS.image is None:
-        print("error")
-    else:
-        mode = IMG
-
 #Could read the image without the argparse, using the command below
 #img = cv2.imread("yourimage.jpg")
 img = cv2.imread(FLAGS.image)
